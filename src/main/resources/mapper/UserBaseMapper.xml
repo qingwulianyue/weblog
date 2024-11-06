@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+接口式开发:
+1.方法的名称需要和映射文件中的sql语句id一致
+2.sql语句的namespace需要为接口的引用路径
+-->
+<mapper namespace="weblog.dao.UserBaseMapper">
+    <select id="getEmailList"
+            resultType="string">
+        select email from user_base
+    </select>
+    <select id="getUsernameList"
+            resultType="string">
+        select username from user_base
+    </select>
+    <select id="getUserByUsername"
+            parameterType="string"
+            resultType="weblog.entity.UserBase">
+        select * from user_base where username = #{username}
+    </select>
+</mapper>

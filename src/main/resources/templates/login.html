@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次元博客登录</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="login-container">
+        <h2>欢迎来到二次元世界</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="用户名" required>
+            <input type="password" id="password" placeholder="密码" required>
+            <div class="form-actions">
+                <button type="submit" id="loginBtn" class="btn btn-primary">登录</button>
+                <button type="button" id="registerBtn" class="btn btn-secondary">注册</button>
+            </div>
+            <a href="#" id="forgotPassword" class="forgot-password">忘记密码？</a>
+        </form>
+    </div>
+    <div id="message" class="message hidden">
+        <span id="messageText"></span>
+        <button id="closeMessage">&times;</button>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+<script src="/js/jquery-3.7.1.js" type="text/javascript" charset="utf-8"></script>
+</html>

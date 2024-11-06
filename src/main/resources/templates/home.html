@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次元风格博客</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+<div class="page-container">
+    <div class="content-wrap">
+        <div class="background-slideshow"></div>
+
+        <header class="glass-effect">
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#download">下载站</a></li>
+                    <li><a href="/profile?token=home">个人中心</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="搜索文章..." class="glass-effect">
+                <button id="search-button" class="glass-effect">搜索</button>
+            </div>
+        </header>
+
+        <main class="glass-effect">
+            <section id="featured-posts">
+                <h2>精选文章</h2>
+                <div id="post-grid" class="post-grid">
+                    <!-- 文章将通过JavaScript动态添加 -->
+                </div>
+                <button id="load-more" class="glass-effect">加载更多</button>
+            </section>
+        </main>
+    </div>
+
+    <footer class="glass-effect">
+        <p>&copy; 2024 二次元风格博客. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="/js/home.js"></script>
+</body>
+</html>

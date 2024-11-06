@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: weblog
+    datasource:
+        name: defaultDataSource
+        url: jdbc:mysql://localhost:3306/weblog?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Hongkong
+        username: root
+        password: root
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+    mapper-locations: classpath:mapper/*.xml
+mybatis-plus:
+    type-aliases-package: weblog.entity
+logging:
+    level:
+        weblog:
+            dao: debug

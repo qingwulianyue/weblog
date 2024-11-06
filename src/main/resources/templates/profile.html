@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>二次元风格个人主页</title>
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+<div class="page-container">
+  <div class="content-wrap">
+    <div class="background-slideshow"></div>
+
+    <header class="glass-effect">
+      <nav>
+        <ul>
+          <li><a href="#home">首页</a></li>
+          <li><a href="#download">下载站</a></li>
+          <li><a href="#profile" class="active">个人中心</a></li>
+        </ul>
+      </nav>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="搜索文章..." class="glass-effect">
+        <button id="search-button" class="glass-effect">搜索</button>
+      </div>
+    </header>
+
+    <main class="glass-effect">
+      <section id="profile" class="profile-section">
+        <div class="profile-header">
+          <div class="avatar-container">
+            <img src="avatar.png" alt="用户头像" id="profile-avatar" class="profile-avatar">
+            <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+            <label for="avatar-upload" class="avatar-upload-label">更换头像</label>
+          </div>
+          <h1 id="username">加载中...</h1>
+        </div>
+        <div class="avatar-options">
+          <button id="toggle-shape" class="glass-effect">切换形状</button>
+        </div>
+        <div class="profile-info">
+          <p id="bio">加载中...</p>
+          <div class="profile-stats">
+            <div class="stat">
+              <span id="posts-count">0</span>
+              <label>发布</label>
+            </div>
+            <div class="stat">
+              <span id="followers-count">0</span>
+              <label>粉丝</label>
+            </div>
+            <div class="stat">
+              <span id="following-count">0</span>
+              <label>关注</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="personal-info" class="personal-info-section">
+        <h2>个人资料</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <label>昵称</label>
+            <span id="nickname">加载中...</span>
+          </div>
+          <div class="info-item">
+            <label>性别</label>
+            <span id="gender">加载中...</span>
+          </div>
+          <div class="info-item">
+            <label>生日</label>
+            <span id="birthday">加载中...</span>
+          </div>
+          <div class="info-item">
+            <label>地区</label>
+            <span id="location">加载中...</span>
+          </div>
+          <div class="info-item">
+            <label>兴趣爱好</label>
+            <span id="interests">加载中...</span>
+          </div>
+          <div class="info-item">
+            <label>个性签名</label>
+            <span id="signature">加载中...</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="posts" class="posts-section">
+        <h2>我的发布</h2>
+        <div id="posts-container" class="posts-grid">
+          <!-- 发布内容将通过JavaScript动态添加 -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="glass-effect">
+    <p>&copy; 2024 二次元风格个人主页. All rights reserved.</p>
+  </footer>
+</div>
+
+<script src="/js/profile.js"></script>
+</body>
+</html>
